@@ -4,10 +4,12 @@ import java.util.List;
 
 public class HomeworkPart1_7_29 {
 	
-	/*This is a combination of my own work combined with that of the Book and Internet's work.
-	 * I had trouble with this one initially but started to make sense the more i researched it.
-	 * I used Stack Exchange, along with good Ol' Google, and referenced the book to turn their 
-	 * complicated terminology into something that i could understand.
+	/*This is a combination of my own work combined with that of the
+	 * Book and Internet's work. I had trouble with this one initially
+	 * but started to make sense the more i researched it.
+	 * I used Stack Exchange, along with good ol' Google, and referenced
+	 * the book to turn their complicated terminology into something that 
+	 * i could understand.
 	 */
 
 	public static void main(String[] args) {
@@ -42,33 +44,34 @@ public class HomeworkPart1_7_29 {
         }
         
         // this will add the cards together and display an output
-        int sum = 0;
+        int sumOfAllCards = 0;
         int jack = 11;
         int queen = 12;
         int king = 13;
         int ace = 1;
+        // I'm not sure what iterator does exactly, but it helped here.
         Iterator<String> iterator = pickedCards.iterator();
         while(iterator.hasNext()) {
 
             String rank = iterator.next();
             System.out.println(rank);
             if(rank.equalsIgnoreCase("Jack")){
-            sum = sum+jack;
+            	sumOfAllCards = (sumOfAllCards + jack);
         }
         else if(rank.equalsIgnoreCase("Queen")){
-            sum = sum+queen;
+        	sumOfAllCards = (sumOfAllCards + queen);
         }
         else if(rank.equalsIgnoreCase("King")){
-            sum = sum+king;
+        	sumOfAllCards = (sumOfAllCards + king);
         }
         else if(rank.equalsIgnoreCase("Ace")){
-            sum = sum+ace;
+        	sumOfAllCards = (sumOfAllCards + ace);
         } 
         else {
-            sum = sum+Integer.parseInt(rank);
+        	sumOfAllCards = sumOfAllCards + Integer.parseInt(rank);
         }
     }
-    System.out.println("Sum of picked cards is : "+sum);
+    System.out.println("Sum of picked cards is : " + sumOfAllCards);
 	}
 
 }
