@@ -13,6 +13,7 @@ public class HomeworkPart1_7_29 {
 	 */
 
 	public static void main(String[] args) {
+<<<<<<< HEAD
 		System.out.print("Hello Jason");
 		//initialize everything
 		int[] deck = new int[52];
@@ -73,6 +74,10 @@ public class HomeworkPart1_7_29 {
 		}
 		// This will display the sum of the cards that were chosen.
 		System.out.println("Sum of picked cards is : " + sumOfAllCards);
+=======
+		System.out.println("Hello Jason");
+		System.out.println("This is a Test.");
+>>>>>>> part1
 	}
 
 }
