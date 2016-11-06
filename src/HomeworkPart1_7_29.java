@@ -9,7 +9,7 @@ public class HomeworkPart1_7_29 {
 	 * but started to make sense the more i researched it.
 	 * I used Stack Exchange, along with good ol' Google, and referenced
 	 * the book to turn their complicated terminology into something that 
-	 * i could understand.
+	 * I could understand.
 	 */
 
 	public static void main(String[] args) {
